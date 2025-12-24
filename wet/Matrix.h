@@ -6,7 +6,7 @@
 #include <string>
 #include <iostream>
 #include "Utilities.h"
-
+#include <cmath>
 class Matrix {
 private:
     int rows;
