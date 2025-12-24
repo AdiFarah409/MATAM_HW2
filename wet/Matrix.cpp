@@ -267,3 +267,4 @@ double Matrix::CalcFrobeniusNorm(const Matrix& matrix) {
 
     return sqrt(sum);
 }
+
