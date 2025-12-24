@@ -9,7 +9,8 @@ int main() {
 
     Pirate luffy("Luffy");
     Pirate zoro("Zoro");
-
+    luffy.setBounty(1000000);
+    zoro.setBounty(500000);
     const int crewSize = 2;
     
     Pirate strawHatCrew[crewSize];
