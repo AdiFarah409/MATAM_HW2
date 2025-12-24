@@ -1,0 +1,1552 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+
+    <h2><span style="color:red;">102 Failed</span> out of 102</h2>
+        <button type="button" class="collapsible" style="color:red">
+        Example Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest example &gt; example.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example Test - Failed!</p><div class="diff-wrapper"><h3>Example Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Movie·Name:·MataMatrix⏎</div><div class='line removed'>Author:·Adi·Harif⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Example Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest example  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74026) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74026) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74026) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74026]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Example Matrix Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest exampleMatrix &gt; exampleMatrix.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example Matrix Test - Failed!</p><div class="diff-wrapper"><h3>Example Matrix Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Example Matrix Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest exampleMatrix  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example Matrix Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74031) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74031) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74031) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74031]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Example MataMvidia Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest exampleMataMvidia &gt; exampleMataMvidia.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example MataMvidia Test - Failed!</p><div class="diff-wrapper"><h3>Example MataMvidia Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Movie·Name:·MataMatrix⏎</div><div class='line removed'>Author:·Adi·Harif⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Example MataMvidia Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest exampleMataMvidia  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Example MataMvidia Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74036) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74036) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74036) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74036]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Constructor Test (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorAssignment &gt; constructorAssignment.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Constructor Test (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Constructor Test (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Constructor Test (Thanks Linoy :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorAssignment  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Constructor Test (Thanks Linoy :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74041) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74041) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74041) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74041]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Invalid Index Test 1 (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorErrorSize1 2&gt; constructorErrorSize1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Invalid Index Test 1 (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Invalid Index Test 1 (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Out·of·bounds⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Invalid Index Test 2 (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorErrorSize2 2&gt; constructorErrorSize2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Invalid Index Test 2 (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Invalid Index Test 2 (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Out·of·bounds⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Invalid Index Test 3 (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorErrorSize3 2&gt; constructorErrorSize3.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Invalid Index Test 3 (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Invalid Index Test 3 (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Out·of·bounds⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Invalid Index Test 4 (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest constructorErrorSize4 2&gt; constructorErrorSize4.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Invalid Index Test 4 (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Invalid Index Test 4 (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Out·of·bounds⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Mata Mvidia End to End (Thanks Linoy :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest mataMvidiaE2E &gt; mataMvidiaE2E.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Mata Mvidia End to End (Thanks Linoy :)) - Failed!</p><div class="diff-wrapper"><h3>Mata Mvidia End to End (Thanks Linoy :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>a:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>a.transpose()-a:⏎</div><div class='line removed'>|0|-2|-2|⏎</div><div class='line removed'>|2|0|4|⏎</div><div class='line removed'>|2|-4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>a.rotateCounterClockwise()+b.rotateClockwise()⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>d:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>e:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>a*e:⏎</div><div class='line removed'>|5|11|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|3|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>d*a:⏎</div><div class='line removed'>|3|10|5|⏎</div><div class='line removed'>|3|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>a+b:⏎</div><div class='line removed'>|1|0|1|⏎</div><div class='line removed'>|2|2|4|⏎</div><div class='line removed'>|3|0|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-a⏎</div><div class='line removed'>|-1|-2|-3|⏎</div><div class='line removed'>|0|-2|0|⏎</div><div class='line removed'>|-1|-4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>2*d:⏎</div><div class='line removed'>|2|0|4|⏎</div><div class='line removed'>|6|2|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>2*d==d*2:⏎</div><div class='line removed'>1⏎</div><div class='line removed'>a.transpose!=a.counterClockSize:⏎</div><div class='line removed'>1⏎</div><div class='line removed'>m⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|-2|-2|⏎</div><div class='line removed'>|2|0|4|⏎</div><div class='line removed'>|2|-4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>z⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|-2|-2|⏎</div><div class='line removed'>|2|0|4|⏎</div><div class='line removed'>|2|-4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>z⏎</div><div class='line removed'>Movie·Name:·malibu⏎</div><div class='line removed'>Author:·adi⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>m[1]=·-b⏎</div><div class='line removed'>|0|2|2|⏎</div><div class='line removed'>|-2|0|-4|⏎</div><div class='line removed'>|-2|4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>m+x⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|2|2|⏎</div><div class='line removed'>|-2|0|-4|⏎</div><div class='line removed'>|-2|4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·5:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·6:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·7:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>m+=a*e⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|2|2|⏎</div><div class='line removed'>|-2|0|-4|⏎</div><div class='line removed'>|-2|4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·5:⏎</div><div class='line removed'>|5|11|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|3|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>m+=x⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|2|2|⏎</div><div class='line removed'>|-2|0|-4|⏎</div><div class='line removed'>|-2|4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·5:⏎</div><div class='line removed'>|5|11|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|3|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·6:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·7:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·8:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div><div class='line removed'>m⏎</div><div class='line removed'>Movie·Name:·Matrix⏎</div><div class='line removed'>Author:·linoy⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|0|2|0|⏎</div><div class='line removed'>|1|4|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|0|2|2|⏎</div><div class='line removed'>|-2|0|-4|⏎</div><div class='line removed'>|-2|4|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·3:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·4:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·5:⏎</div><div class='line removed'>|5|11|⏎</div><div class='line removed'>|0|2|⏎</div><div class='line removed'>|3|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·6:⏎</div><div class='line removed'>|5|2|1|⏎</div><div class='line removed'>|-2|2|2|⏎</div><div class='line removed'>|1|4|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·7:⏎</div><div class='line removed'>|1|0|2|⏎</div><div class='line removed'>|3|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·8:⏎</div><div class='line removed'>|2|0|⏎</div><div class='line removed'>|0|1|⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Mata Mvidia End to End (Thanks Linoy :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest mataMvidiaE2E  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Mata Mvidia End to End (Thanks Linoy :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74054) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74054) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74054) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74054]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Initialization Test (Thanks Nir :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixInit &gt; matrixInit.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Initialization Test (Thanks Nir :)) - Failed!</p><div class="diff-wrapper"><h3>Matrix Initialization Test (Thanks Nir :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|6|8|⏎</div><div class='line removed'>|10|12|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>|9|12|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>|2|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|3|1|⏎</div><div class='line removed'>|4|2|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Initialization Test (Thanks Nir :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixInit  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Initialization Test (Thanks Nir :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74059) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74059) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74059) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74059]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Mata Mvidia Operations Test (Thanks Nir :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest mataMvidiaOperations &gt; mataMvidiaOperations.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Mata Mvidia Operations Test (Thanks Nir :)) - Failed!</p><div class="diff-wrapper"><h3>Mata Mvidia Operations Test (Thanks Nir :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>First·index·is·first·frame:·1⏎</div><div class='line removed'>Second·index·is·second·frame:·1⏎</div><div class='line removed'>Third·index·is·third·frame:·1⏎</div><div class='line removed'>⏎</div><div class='line removed'>Movie·Name:·Test·Movie⏎</div><div class='line removed'>Author:·Author⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·1:⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>|7|8|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·2:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Mata Mvidia Operations Test (Thanks Nir :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest mataMvidiaOperations  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Mata Mvidia Operations Test (Thanks Nir :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74064) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74064) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74064) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74064]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Transformations Test (Thanks Nir :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixTransformations &gt; matrixTransformations.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Transformations Test (Thanks Nir :)) - Failed!</p><div class="diff-wrapper"><h3>Matrix Transformations Test (Thanks Nir :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|⏎</div><div class='line removed'>|2|⏎</div><div class='line removed'>|3|⏎</div><div class='line removed'>|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|4|7|⏎</div><div class='line removed'>|2|5|8|⏎</div><div class='line removed'>|3|6|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|⏎</div><div class='line removed'>|2|⏎</div><div class='line removed'>|3|⏎</div><div class='line removed'>|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|7|4|1|⏎</div><div class='line removed'>|8|5|2|⏎</div><div class='line removed'>|9|6|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|3|6|9|⏎</div><div class='line removed'>|2|5|8|⏎</div><div class='line removed'>|1|4|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>|5|6|7|8|⏎</div><div class='line removed'>|9|10|11|12|⏎</div><div class='line removed'>|13|14|15|16|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|13|9|5|1|⏎</div><div class='line removed'>|14|10|6|2|⏎</div><div class='line removed'>|15|11|7|3|⏎</div><div class='line removed'>|16|12|8|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|16|15|14|13|⏎</div><div class='line removed'>|12|11|10|9|⏎</div><div class='line removed'>|8|7|6|5|⏎</div><div class='line removed'>|4|3|2|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|4|8|12|16|⏎</div><div class='line removed'>|3|7|11|15|⏎</div><div class='line removed'>|2|6|10|14|⏎</div><div class='line removed'>|1|5|9|13|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>|5|6|7|8|⏎</div><div class='line removed'>|9|10|11|12|⏎</div><div class='line removed'>|13|14|15|16|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>|5|6|7|8|⏎</div><div class='line removed'>|9|10|11|12|⏎</div><div class='line removed'>|13|14|15|16|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Transformations Test (Thanks Nir :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixTransformations  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Transformations Test (Thanks Nir :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74069) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74069) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74069) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74069]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Non-Square Matrix Transformations Test (Thanks Nir :))</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest nonSquareMatrixTransformations &gt; nonSquareMatrixTransformations.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Non-Square Matrix Transformations Test (Thanks Nir :)) - Failed!</p><div class="diff-wrapper"><h3>Non-Square Matrix Transformations Test (Thanks Nir :))</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|4|⏎</div><div class='line removed'>|2|5|⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|3|5|⏎</div><div class='line removed'>|2|4|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|2|4|6|⏎</div><div class='line removed'>|8|10|12|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|6|12|18|⏎</div><div class='line removed'>|24|30|36|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|2|4|6|⏎</div><div class='line removed'>|8|10|12|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>|9|12|⏎</div><div class='line removed'>|15|18|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|12|24|⏎</div><div class='line removed'>|36|48|⏎</div><div class='line removed'>|60|72|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>|9|12|⏎</div><div class='line removed'>|15|18|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|4|⏎</div><div class='line removed'>|2|5|⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|4|⏎</div><div class='line removed'>|2|5|⏎</div><div class='line removed'>|3|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|3|5|⏎</div><div class='line removed'>|2|4|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|1|3|5|⏎</div><div class='line removed'>|2|4|6|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Non-Square Matrix Transformations Test (Thanks Nir :)) - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest nonSquareMatrixTransformations  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Non-Square Matrix Transformations Test (Thanks Nir :)) has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74074) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74074) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74074) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74074]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Sum is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest additionZeroResult &gt; additionZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Sum is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Sum is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Sum is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest additionZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Sum is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74079) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74079) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74079) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74079]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Subtraction is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest subZeroResult &gt; subZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Subtraction is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Subtraction is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Subtraction is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest subZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Subtraction is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74084) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74084) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74084) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74084]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Multiplication is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest multiplyZeroResult &gt; multiplyZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Multiplication is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Multiplication is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Test·Multiplication:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|0|0|0|⏎</div><div class='line removed'>|0|0|0|⏎</div><div class='line removed'>|0|0|0|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Multiplication is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest multiplyZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Multiplication is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74089) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74089) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74089) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74089]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Scalar Multiplication is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest scalarMultiplyZeroResult &gt; scalarMultiplyZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Scalar Multiplication is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Scalar Multiplication is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Test·Scalar·Right·Multiplication:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Test·Scalar·Left·Multiplication:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Scalar Multiplication is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest scalarMultiplyZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Scalar Multiplication is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74094) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74094) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74094) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74094]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Sum Assignment Multiplication is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest additionAssignmentZeroResult &gt; additionAssignmentZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Sum Assignment Multiplication is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Sum Assignment Multiplication is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Sum Assignment Multiplication is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest additionAssignmentZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Sum Assignment Multiplication is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74099) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74099) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74099) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74099]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Subtract Assignment Multiplication is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest subAssignmentZeroResult &gt; subAssignmentZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Subtract Assignment Multiplication is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Subtract Assignment Multiplication is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Subtract Assignment Multiplication is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest subAssignmentZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Subtract Assignment Multiplication is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74104) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74104) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74104) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74104]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Multiplication Assignment Multiplication is Zero Test</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest multiplyAssignmentZeroResult &gt; multiplyAssignmentZeroResult.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Multiplication Assignment Multiplication is Zero Test - Failed!</p><div class="diff-wrapper"><h3>Matrix Multiplication Assignment Multiplication is Zero Test</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Test·Multiplication·Assignment:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Matrix Multiplication Assignment Multiplication is Zero Test - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest multiplyAssignmentZeroResult  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Matrix Multiplication Assignment Multiplication is Zero Test has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74109) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74109) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74109) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74109]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Zero Matrix Tests</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testZeroMatrix &gt; zeroMatrix.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Zero Matrix Tests - Failed!</p><div class="diff-wrapper"><h3>Zero Matrix Tests</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Constructor:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Copy·constructor:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Assignment·operator:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Rotate·clockwise:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Rotate·counter-clockwise:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Transpose:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Negation·operator:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>⏎</div><div class='line removed'>Addition·operator:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Subtraction·operator:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Multiplication·operator:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Scalar·multiplication·(left):⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Scalar·multiplication·(right):⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Addition·assignment:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Subtraction·assignment:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Multiplication·assignment:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>Scalar·multiplication·assignment:⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>matrix·1·equal·matrix·2:·1⏎</div><div class='line removed'>matrix·1·equal·matrix·3:·0⏎</div><div class='line removed'>matrix·1·not·equal·matrix·2:·0⏎</div><div class='line removed'>matrix·1·not·equal·matrix·3:·1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Zero Matrix Tests - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testZeroMatrix  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Zero Matrix Tests has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74116) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74116) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74116) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74116]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Advanced: m += m and m + m Tests</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixPlusItself 2&gt;&1 &gt; matrixPlusItself.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Advanced: m += m and m + m Tests - Failed!</p><div class="diff-wrapper"><h3>Advanced: m += m and m + m Tests</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|⏎</div><div class='line removed'>|3|4|⏎</div><div class='line removed'>|5|6|⏎</div><div class='line removed'>⏎</div><div class='line removed'>m·+·m:⏎</div><div class='line removed'>|2|4|⏎</div><div class='line removed'>|6|8|⏎</div><div class='line removed'>|10|12|⏎</div><div class='line removed'>⏎</div><div class='line removed'>m·+=·m:⏎</div><div class='line removed'>|2|4|⏎</div><div class='line removed'>|6|8|⏎</div><div class='line removed'>|10|12|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Advanced: m += m and m + m Tests - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixPlusItself  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Advanced: m += m and m + m Tests has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74122) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74122) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74122) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74122]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Advanced: m *= m and m * m Tests</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixMultiplyItself 2&gt;&1 &gt; matrixMultiplyItself.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Advanced: m *= m and m * m Tests - Failed!</p><div class="diff-wrapper"><h3>Advanced: m *= m and m * m Tests</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>m·*·m:⏎</div><div class='line removed'>|30|36|42|⏎</div><div class='line removed'>|66|81|96|⏎</div><div class='line removed'>|102|126|150|⏎</div><div class='line removed'>⏎</div><div class='line removed'>m·*=·m:⏎</div><div class='line removed'>|30|36|42|⏎</div><div class='line removed'>|66|81|96|⏎</div><div class='line removed'>|102|126|150|⏎</div><div class='line removed'>⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Advanced: m *= m and m * m Tests - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matrixMultiplyItself  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Advanced: m *= m and m * m Tests has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74127) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74127) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74127) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74127]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Test Matamvidia constructor params copied by value</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matamvidiaCopiesCtorParams 2&gt;&1 &gt; matamvidiaCopiesCtorParams.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Test Matamvidia constructor params copied by value - Failed!</p><div class="diff-wrapper"><h3>Test Matamvidia constructor params copied by value</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Movie·Name:·may·leak·due·to·strings⏎</div><div class='line removed'>Author:·oopsie⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div><div class='line removed'>Movie·Name:·may·leak·due·to·strings·and·matrix⏎</div><div class='line removed'>Author:·oopsie⏎</div><div class='line removed'>⏎</div><div class='line removed'>Frame·0:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|4|5|6|⏎</div><div class='line removed'>|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>-----End·of·Movie-----⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Test Matamvidia constructor params copied by value - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest matamvidiaCopiesCtorParams  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Test Matamvidia constructor params copied by value has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74132) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74132) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74132) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74132]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        null matrix det calc</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetZero &gt; testDetZero.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>null matrix det calc - Failed!</p><div class="diff-wrapper"><h3>null matrix det calc</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        null matrix det calc - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetZero  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>null matrix det calc has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74137) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74137) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74137) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74137]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Long Rectangle det calc error</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetLongRectangle 2&gt; testDetLongRectangle.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Long Rectangle det calc error - Failed!</p><div class="diff-wrapper"><h3>Long Rectangle det calc error</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Matrix·must·be·square·to·calculate·determinant⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        Tall Rectangle det calc error</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTallRectangle 2&gt; testDetTallRectangle.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>Tall Rectangle det calc error - Failed!</p><div class="diff-wrapper"><h3>Tall Rectangle det calc error</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>Matam·Error:·Matrix·must·be·square·to·calculate·determinant⏎</div><div class='line empty'></div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line added'>/bin/sh:·/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest:·No·such·file·or·directory⏎</div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Positive 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFivePositive1 &gt; testDetFiveByFivePositive1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Positive 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Positive 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|-5|-4|3|-5|⏎</div><div class='line removed'>|1|1|-5|2|3|⏎</div><div class='line removed'>|-5|-3|3|2|2|⏎</div><div class='line removed'>|2|-3|3|-5|0|⏎</div><div class='line removed'>|-1|5|4|0|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>4106⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Positive 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFivePositive1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Positive 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74147) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74147) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74147) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74147]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Positive 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFivePositive2 &gt; testDetFiveByFivePositive2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Positive 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Positive 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|0|3|-2|-5|5|⏎</div><div class='line removed'>|-3|3|-1|1|1|⏎</div><div class='line removed'>|1|5|2|3|2|⏎</div><div class='line removed'>|-3|1|-5|5|-2|⏎</div><div class='line removed'>|0|5|-4|4|2|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>3⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Positive 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFivePositive2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Positive 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74152) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74152) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74152) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74152]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Negative 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveNegative1 &gt; testDetFiveByFiveNegative1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Negative 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Negative 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|4|2|-4|-1|2|⏎</div><div class='line removed'>|2|2|-4|5|0|⏎</div><div class='line removed'>|3|4|0|3|3|⏎</div><div class='line removed'>|2|-4|-3|-4|5|⏎</div><div class='line removed'>|-1|-1|-3|-4|-3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>952⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Negative 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveNegative1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Negative 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74157) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74157) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74157) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74157]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Negative 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveNegative2 &gt; testDetFiveByFiveNegative2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Negative 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Negative 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|-1|1|2|-1|⏎</div><div class='line removed'>|2|1|2|1|-1|⏎</div><div class='line removed'>|1|2|1|-1|2|⏎</div><div class='line removed'>|2|2|2|2|-1|⏎</div><div class='line removed'>|0|0|-1|2|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Negative 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveNegative2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Negative 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74163) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74163) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74163) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74163]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Zero 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveZero1 &gt; testDetFiveByFiveZero1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Zero 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Zero 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|-3|2|3|5|⏎</div><div class='line removed'>|2|-1|3|-3|-3|⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>|-5|2|2|1|4|⏎</div><div class='line removed'>|-4|5|-5|3|2|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Zero 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveZero1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Zero 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74168) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74168) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74168) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74168]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Zero 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveZero2 &gt; testDetFiveByFiveZero2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Zero 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Five By Five Zero 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|4|3|0|1|-3|⏎</div><div class='line removed'>|-5|2|0|-1|1|⏎</div><div class='line removed'>|5|-3|0|-2|-4|⏎</div><div class='line removed'>|2|-2|0|-1|-5|⏎</div><div class='line removed'>|-2|2|0|3|-3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Five By Five Zero 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFiveByFiveZero2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Five By Five Zero 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74173) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74173) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74173) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74173]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Positive 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourPositive1 &gt; testDetFourByFourPositive1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Positive 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Positive 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|5|2|1|3|⏎</div><div class='line removed'>|0|7|-1|2|⏎</div><div class='line removed'>|0|0|9|4|⏎</div><div class='line removed'>|0|0|0|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>2205⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Positive 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourPositive1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Positive 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74178) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74178) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74178) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74178]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Positive 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourPositive2 &gt; testDetFourByFourPositive2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Positive 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Positive 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|1|0|⏎</div><div class='line removed'>|0|1|0|1|⏎</div><div class='line removed'>|0|0|3|0|⏎</div><div class='line removed'>|1|0|0|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>9⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Positive 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourPositive2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Positive 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74183) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74183) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74183) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74183]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Negative 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourNegative1 &gt; testDetFourByFourNegative1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Negative 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Negative 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|-7|3|1|2|⏎</div><div class='line removed'>|0|-8|2|1|⏎</div><div class='line removed'>|0|0|8|-1|⏎</div><div class='line removed'>|0|0|0|7|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>3136⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Negative 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourNegative1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Negative 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74188) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74188) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74188) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74188]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Negative 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourNegative2 &gt; testDetFourByFourNegative2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Negative 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Negative 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|3|4|⏎</div><div class='line removed'>|2|1|0|5|⏎</div><div class='line removed'>|3|4|1|2|⏎</div><div class='line removed'>|1|0|2|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-108⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Negative 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourNegative2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Negative 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74193) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74193) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74193) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74193]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Zero 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourZero1 &gt; testDetFourByFourZero1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Zero 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Zero 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|4|-1|2|3|⏎</div><div class='line removed'>|1|0|-2|4|⏎</div><div class='line removed'>|0|0|0|0|⏎</div><div class='line removed'>|-3|2|1|-1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Zero 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourZero1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Zero 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74198) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74198) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74198) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74198]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Zero 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourZero2 &gt; testDetFourByFourZero2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Zero 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Four By Four Zero 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|5|3|0|-2|⏎</div><div class='line removed'>|2|1|0|4|⏎</div><div class='line removed'>|3|-1|0|1|⏎</div><div class='line removed'>|1|2|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Four By Four Zero 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetFourByFourZero2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Four By Four Zero 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74203) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74203) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74203) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74203]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Positive</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreePositive &gt; testDetThreeByThreePositive.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Positive - Failed!</p><div class="diff-wrapper"><h3>test Det Three By Three Positive</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|1|1|⏎</div><div class='line removed'>|1|3|2|⏎</div><div class='line removed'>|1|0|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>19⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Positive - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreePositive  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Positive has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74208) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74208) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74208) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74208]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Negative</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreeNegative &gt; testDetThreeByThreeNegative.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Negative - Failed!</p><div class="diff-wrapper"><h3>test Det Three By Three Negative</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|1|1|⏎</div><div class='line removed'>|1|0|4|⏎</div><div class='line removed'>|1|3|2|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-19⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Negative - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreeNegative  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Negative has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74213) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74213) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74213) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74213]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Zero</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreeZero &gt; testDetThreeByThreeZero.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Zero - Failed!</p><div class="diff-wrapper"><h3>test Det Three By Three Zero</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|3|⏎</div><div class='line removed'>|3|3|6|⏎</div><div class='line removed'>|2|1|3|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Three By Three Zero - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetThreeByThreeZero  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Three By Three Zero has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74218) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74218) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74218) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74218]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Positive</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoPositive &gt; testDetTwoByTwoPositive.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Positive - Failed!</p><div class="diff-wrapper"><h3>test Det Two By Two Positive</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|1|⏎</div><div class='line removed'>|1|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Positive - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoPositive  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Positive has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74223) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74223) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74223) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74223]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Negative</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoNegative &gt; testDetTwoByTwoNegative.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Negative - Failed!</p><div class="diff-wrapper"><h3>test Det Two By Two Negative</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|3|⏎</div><div class='line removed'>|2|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-5⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Negative - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoNegative  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Negative has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74228) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74228) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74228) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74228]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Zero</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoZero &gt; testDetTwoByTwoZero.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Zero - Failed!</p><div class="diff-wrapper"><h3>test Det Two By Two Zero</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|-3|-1041|⏎</div><div class='line removed'>|5|1735|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Two By Two Zero - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetTwoByTwoZero  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Two By Two Zero has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74233) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74233) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74233) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74233]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Positive</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOnePositive &gt; testDetOneByOnePositive.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Positive - Failed!</p><div class="diff-wrapper"><h3>test Det One By One Positive</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|4|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>4⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Positive - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOnePositive  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Positive has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74238) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74238) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74238) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74238]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Negative</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOneNegative &gt; testDetOneByOneNegative.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Negative - Failed!</p><div class="diff-wrapper"><h3>test Det One By One Negative</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|-37|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-37⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Negative - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOneNegative  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Negative has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74243) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74243) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74243) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74243]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Zero</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOneZero &gt; testDetOneByOneZero.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Zero - Failed!</p><div class="diff-wrapper"><h3>test Det One By One Zero</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det One By One Zero - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetOneByOneZero  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det One By One Zero has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74248) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74248) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74248) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74248]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Permutation 1</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetPermutation1 &gt; testDetPermutation1.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Permutation 1 - Failed!</p><div class="diff-wrapper"><h3>test Det Permutation 1</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|0|1|0|0|⏎</div><div class='line removed'>|1|0|0|0|⏎</div><div class='line removed'>|0|0|1|0|⏎</div><div class='line removed'>|0|0|0|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>-1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Permutation 1 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetPermutation1  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Permutation 1 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74253) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74253) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74253) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74253]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Permutation 2</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetPermutation2 &gt; testDetPermutation2.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Permutation 2 - Failed!</p><div class="diff-wrapper"><h3>test Det Permutation 2</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|0|0|1|0|0|⏎</div><div class='line removed'>|1|0|0|0|0|⏎</div><div class='line removed'>|0|0|0|0|1|⏎</div><div class='line removed'>|0|1|0|0|0|⏎</div><div class='line removed'>|0|0|0|1|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Permutation 2 - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetPermutation2  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Permutation 2 has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74258) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74258) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74258) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74258]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Identity</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetIdentity &gt; testDetIdentity.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Identity - Failed!</p><div class="diff-wrapper"><h3>test Det Identity</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|0|0|0|0|⏎</div><div class='line removed'>|0|1|0|0|0|⏎</div><div class='line removed'>|0|0|1|0|0|⏎</div><div class='line removed'>|0|0|0|1|0|⏎</div><div class='line removed'>|0|0|0|0|1|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>1⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Identity - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetIdentity  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Identity has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74263) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74263) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74263) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74263]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Diagonal</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetDiagonal &gt; testDetDiagonal.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Diagonal - Failed!</p><div class="diff-wrapper"><h3>test Det Diagonal</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|2|0|0|0|0|⏎</div><div class='line removed'>|0|3|0|0|0|⏎</div><div class='line removed'>|0|0|5|0|0|⏎</div><div class='line removed'>|0|0|0|7|0|⏎</div><div class='line removed'>|0|0|0|0|11|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>2310⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Diagonal - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetDiagonal  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Diagonal has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74268) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74268) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74268) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74268]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Linearly Dependent Five By Five</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetLinearlyDependentFiveByFive &gt; testDetLinearlyDependentFiveByFive.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Linearly Dependent Five By Five - Failed!</p><div class="diff-wrapper"><h3>test Det Linearly Dependent Five By Five</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|1|2|3|4|5|⏎</div><div class='line removed'>|2|3|4|5|6|⏎</div><div class='line removed'>|3|4|5|6|7|⏎</div><div class='line removed'>|4|5|6|7|8|⏎</div><div class='line removed'>|5|6|7|8|9|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det Linearly Dependent Five By Five - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetLinearlyDependentFiveByFive  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det Linearly Dependent Five By Five has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74273) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74273) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74273) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74273]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det All Zero Five By Five</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetAllZeroFiveByFive &gt; testDetAllZeroFiveByFive.out && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det All Zero Five By Five - Failed!</p><div class="diff-wrapper"><h3>test Det All Zero Five By Five</h3>
+
+
+    <div class="diff-container">
+        <div class="diff-column">
+            <div class="diff-header">Expected</div>
+            <div class='line removed'>m:⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>|0|0|0|0|0|⏎</div><div class='line removed'>⏎</div><div class='line removed'>det:⏎</div><div class='line removed'>0⏎</div>
+        </div>
+        <div class="diff-column">
+            <div class="diff-header">Actual</div>
+            <div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div><div class='line empty'></div>
+        </div>
+    </div>
+    </div></p>
+</div>
+
+        <button type="button" class="collapsible" style="color:red">
+        test Det All Zero Five By Five - leaks</button>
+<div class="content">
+  <p>Test Command:</p><code>export TESTER_TMP_PWD=$(pwd) && cd ./TechnionMatam/HW2/tests && export MallocStackLogging=1 && leaks --atExit -- /Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest testDetAllZeroFiveByFive  && cd $TESTER_TMP_PWD && unset TESTER_TMP_PWD</code>
+  <p><p>test Det All Zero Five By Five has leaks!<br/>Failed due to an error raised by leaks!</p><div class="grid-container-element"><div class="grid-child-element"><p>Error:</p><p>leaks(74278) MallocStackLogging: process is not in a debuggable environment; unsetting MallocStackLoggingDirectory environment variable<br/>leaks(74278) MallocStackLogging: could not tag MSL-related memory as no_footprint, so those pages will be included in process footprint - No such file or directory (2)<br/>leaks(74278) MallocStackLogging: recording malloc (and VM allocation) stacks using lite mode<br/>leaks[74278]: [fatal] Unable to launch --atExit command '/Users/adyfarah/Desktop/MATAM/MATAM_HW2/HW2_2526A/wet/MvidiaTest': No such file or directory<span style="background-color: orange;">\n</span><br/></p></div></div></p>
+</div>
+
+</body>
+</html>
+        <style>
+        .diff-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-family: monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            overflow-x: scroll;
+            margin-bottom: 1em;
+        }
+        .diff-column {
+            padding: 6px;
+        }
+        .diff-header {
+            background: #f0f0f0;
+            font-weight: bold;
+            padding: 4px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .line {
+            padding: 1px 4px;
+        }
+        .line.keep { background: none; }
+        .line.added { background: #bfe4ca; color: #22863a; }
+        .line.removed { background: #ffeef0; color: #cb2431; }
+        .line.empty { background: #f9f9f9; color: #aaa; }
+        </style>
+        
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<style>
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+<style>
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+<style>
+.grid-container-element { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    width: 80%; 
+} 
+.grid-child-element { 
+    margin: 10px; 
+    border: 1px solid red; 
+}
+</style>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+    
