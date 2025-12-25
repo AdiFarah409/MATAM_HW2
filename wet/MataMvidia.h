@@ -5,7 +5,7 @@ class MataMvidia {
 private:
     int numFrames;
     Matrix *frames;
-    std::string nameCreator;//שם יוצר
+    std::string nameCreator;        //שם יוצר
     std::string nameMovie;         //  שם סרט
 public:
     MataMvidia(const std::string& nameMovie,

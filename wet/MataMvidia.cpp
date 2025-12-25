@@ -52,7 +52,7 @@ MataMvidia& MataMvidia::operator+=(const Matrix& other) {
     Matrix *matrix = new Matrix[numFrames+1];
     for(int i=0;i<numFrames;i++) {
         matrix[i]=frames[i];
-    }
+    } // fill in order and then add the new one
     matrix[numFrames] = other;
     delete [] frames;
     frames = matrix;
@@ -71,7 +71,7 @@ MataMvidia& MataMvidia::operator+=(const MataMvidia& other)
     return *this;
 }
 
-
+// uses the += operator
 MataMvidia MataMvidia::operator+(const MataMvidia& other) const{
     MataMvidia result = *this;
     result+=other;
@@ -94,6 +94,7 @@ Matrix& MataMvidia::operator[](int index){
     return frames[index];
 }
 
+// print according to said order.
 std::ostream &operator<<(std::ostream &os,const MataMvidia& matrix) {
     os << "Movie Name: " << matrix.nameMovie << std::endl;
     os << "Author: " << matrix.nameCreator << std::endl << std::endl;

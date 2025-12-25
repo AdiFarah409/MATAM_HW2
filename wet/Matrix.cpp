@@ -247,55 +247,56 @@ Matrix Matrix::transpose() const{
 }
 
 //norm calc
-double Matrix::CalcFrobeniusNorm(const Matrix& matrix) const {
+double Matrix::CalcFrobeniusNorm(const Matrix& matrix) {
     double sum = 0.0;
-
     for (int i = 0; i < matrix.rows; ++i) {
         for (int j = 0; j < matrix.columns; ++j) {
-            double value = matrix(i, j);
-            sum += value * value;
+            double v = matrix(i, j);
+            sum += v * v;
         }
     }
-
-    return sqrt(sum);
+    return std::sqrt(sum);
 }
 
-//bonus determinant.
 
-double Matrix::CalcDeterminant(const Matrix& matrix) const {
+
+double Matrix::CalcDeterminant(const Matrix& matrix) {
+
+    if (matrix.rows == 0 || matrix.columns == 0) {
+        return 0;
+    }
+
     if (matrix.rows != matrix.columns) {
         exitWithError(MatamErrorType::NotSquareMatrix);
     }
+
     if (matrix.rows == 1) {
         return matrix(0, 0);
     }
 
+    if (matrix.rows == 2) {
+        return matrix(0,0) * matrix(1,1) - matrix(0,1) * matrix(1,0);
+    }
 
-    double determinant = 0.0;
+    double det = 0.0;
     for (int j = 0; j < matrix.columns; ++j) {
         Matrix minor(matrix.rows - 1, matrix.columns - 1);
+
         for (int i = 1; i < matrix.rows; ++i) {
-            int column_Index = 0;
+            int colIndex = 0;
             for (int k = 0; k < matrix.columns; ++k) {
                 if (k == j) continue;
-                minor(i - 1, column_Index) =matrix(i, k);
-                ++column_Index;
+                minor(i - 1, colIndex) = matrix(i, k);
+                ++colIndex;
             }
         }
-        double sign;
-        if (j % 2 == 0) {
-            sign = 1.0;
-        } else {
-            sign = -1.0;
-        }
-        determinant += sign * matrix(0, j) * CalcDeterminant(minor);
+
+        double sign = (j % 2 == 0) ? 1.0 : -1.0;
+        det += sign * matrix(0, j) * Matrix::CalcDeterminant(minor);
     }
-    return determinant;
 
+    return det;
 }
-
-
-
 
 
 
