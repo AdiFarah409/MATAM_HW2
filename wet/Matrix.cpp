@@ -51,12 +51,12 @@ Matrix& Matrix::operator=(const Matrix &other){
         return *this;
     }
 
-    delete[] point;
+    delete[] point; //free the old matrix
 
     rows = other.rows;
     columns = other.columns;
 
-    point = new int[rows * columns];
+    point = new int[rows * columns]; //new must be used because different matrices must not point to the same place
 
     for (int i = 0; i < rows * columns; ++i) {
         point[i] = other.point[i];
@@ -107,11 +107,7 @@ Matrix Matrix::operator-(const Matrix& matrix) const {
     }
 
     Matrix result(rows, columns);
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < columns; ++j) {
-            result(i, j) = (*this)(i, j) - matrix(i, j);
-        }
-    }
+    result =(*this)+(-matrix); //using the unary minus
     return result;
 }
 
@@ -158,11 +154,7 @@ Matrix& Matrix::operator*=(const Matrix& other) {
 // -()
 Matrix Matrix::operator-() const {
     Matrix result(rows, columns);
-    for (int i = 0; i < rows; ++i) {
-        for (int j = 0; j < columns; ++j) {
-            result(i, j) = -(*this)(i, j);
-        }
-    }
+    result= (*this)*-(1);
     return result;
 }
 
@@ -255,7 +247,7 @@ Matrix Matrix::transpose() const{
 }
 
 //norm calc
-double Matrix::CalcFrobeniusNorm(const Matrix& matrix) {
+double Matrix::CalcFrobeniusNorm(const Matrix& matrix) const {
     double sum = 0.0;
 
     for (int i = 0; i < matrix.rows; ++i) {
@@ -267,4 +259,45 @@ double Matrix::CalcFrobeniusNorm(const Matrix& matrix) {
 
     return sqrt(sum);
 }
+
+//bonus determinant.
+
+double Matrix::CalcDeterminant(const Matrix& matrix) const {
+    if (matrix.rows != matrix.columns) {
+        exitWithError(MatamErrorType::NotSquareMatrix);
+    }
+    if (matrix.rows == 1) {
+        return matrix(0, 0);
+    }
+
+
+    double determinant = 0.0;
+    for (int j = 0; j < matrix.columns; ++j) {
+        Matrix minor(matrix.rows - 1, matrix.columns - 1);
+        for (int i = 1; i < matrix.rows; ++i) {
+            int column_Index = 0;
+            for (int k = 0; k < matrix.columns; ++k) {
+                if (k == j) continue;
+                minor(i - 1, column_Index) =matrix(i, k);
+                ++column_Index;
+            }
+        }
+        double sign;
+        if (j % 2 == 0) {
+            sign = 1.0;
+        } else {
+            sign = -1.0;
+        }
+        determinant += sign * matrix(0, j) * CalcDeterminant(minor);
+    }
+    return determinant;
+
+}
+
+
+
+
+
+
+
 
