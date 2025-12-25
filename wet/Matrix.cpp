@@ -3,9 +3,22 @@
 // all the constructors
 Matrix::Matrix() : rows(0),columns(0),point(nullptr){}
 
-Matrix::Matrix(int rows,int columns): rows(rows),columns(columns){
+Matrix::Matrix(int rows, int columns)
+        : rows(rows), columns(columns), point(nullptr)
+{
+    if (rows < 0 || columns < 0) {
+        exitWithError(MatamErrorType::OutOfBounds);
+    }
 
-    point = new int[rows*columns];
+    int n = rows * columns;
+    if (n == 0) {
+        return; // point stays nullptr
+    }
+
+    point = new int[n];
+    for (int i = 0; i < n; i++) {
+        point[i] = 0;   // Initialize everything
+    }
 }
 
 Matrix::Matrix(int rows, int columns, int initValue) : rows(rows), columns(columns) {
@@ -53,10 +66,9 @@ Matrix& Matrix::operator=(const Matrix& other) {
     if (this == &other) {
         return *this;
     }
-
     int newLen = other.rows * other.columns;
-
     int* newPoint = nullptr;
+
     if (newLen != 0) {
         newPoint = new int[newLen];
         for (int i = 0; i < newLen; ++i) {
