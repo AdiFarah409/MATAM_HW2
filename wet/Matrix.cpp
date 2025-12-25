@@ -46,24 +46,35 @@ int Matrix::operator()(int row, int col) const //for reading only
 }
 
 
-Matrix& Matrix::operator=(const Matrix &other){
+
+
+
+Matrix& Matrix::operator=(const Matrix& other) {
     if (this == &other) {
         return *this;
     }
 
-    delete[] point; //free the old matrix
+    int newLen = other.rows * other.columns;
 
+    int* newPoint = nullptr;
+    if (newLen != 0) {
+        newPoint = new int[newLen];
+        for (int i = 0; i < newLen; ++i) {
+            newPoint[i] = other.point[i];
+        }
+    }
+
+    delete[] point;
+    point = newPoint;
     rows = other.rows;
     columns = other.columns;
 
-    point = new int[rows * columns]; //new must be used because different matrices must not point to the same place
-
-    for (int i = 0; i < rows * columns; ++i) {
-        point[i] = other.point[i];
-    }
-
-    return (*this);
+    return *this;
 }
+
+
+
+
 
 
 // the << operator 4.3.5
