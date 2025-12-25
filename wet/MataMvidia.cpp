@@ -89,7 +89,7 @@ const Matrix& MataMvidia::operator[](int index)const {
 //for changing
 Matrix& MataMvidia::operator[](int index){
     if(index>(numFrames-1) || index<0) {
-        exitWithError(MatamErrorType::UnmatchedSizes);
+        exitWithError(MatamErrorType::OutOfBounds);
     }
     return frames[index];
 }
